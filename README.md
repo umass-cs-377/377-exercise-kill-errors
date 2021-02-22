@@ -45,12 +45,11 @@ int main() {
 		sprintf(test, "%d", pid);
 	
 		char *arguments[3];
-		arguments[0] = (char*)"./fork";
+		arguments[0] = (char*)"./kill";
 		arguments[1] = strdup(test);
 		arguments[2] = NULL;
 
 		//Question code goes here
-		int pid2 = fork();
 	
 		std::cout << "finish them?\n";
 		execvp(arguments[0], arguments);
