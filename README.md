@@ -89,7 +89,7 @@ word.cpp
 using namespace std;
 
 int main() {
-	char *motto; 
+  char *motto; 
   motto = "CS477iscool";     
   *(motto + 2) = '3';
   
