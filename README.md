@@ -1,4 +1,4 @@
-# COMPSCI 377 LAB #3: Kill and Errors
+# COMPSCI 377 LAB: Kill and Errors
 
 ## Purpose
 
