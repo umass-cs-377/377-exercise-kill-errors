@@ -13,7 +13,7 @@ int main() {
 		while (true){
 			runs += 1;
 			std::cout << "Run #" << runs << "\n";
-			std::this_thread::sleep_for (std::chrono::milliseconds(1));
+			std::this_thread::sleep_for(std::chrono::milliseconds(1));
 		}
 	} else {
 		char test[3];
