@@ -107,9 +107,11 @@ In this code, we assign a value to a char array, and then attempt to assign the 
 
 ## Part 3: Debugging (2 Points)
 
-Debugging errors is a necessary part of any coding process, such as determining what parts of a code are causing which errors. However, with certain errors such as Segmentation faults, it can be difficult to tell which parts of the code are causing errors. In these situations, tools like gdb are useful for finding what is going wrong. To use gdb on a program, use the command ‘gdb \_\_\_\_’, where the blank space is your program name. When using gdb, you can use the command ‘gdb \_\_\_’, where the blank space is a line in the code. If you do so, there is a breakpoint placed at the line specified.
+Debugging errors is a necessary part of any coding process, such as determining what parts of a code are causing which errors. However, with certain errors such as Segmentation faults, it can be difficult to tell which parts of the code are causing errors. In these situations, tools like gdb are useful for finding what is going wrong. To use gdb on a program, use the command `gdb ____`, where the blank space is your program name (the executable name without extentions). When using gdb, you can use the command `break ___`, where the blank space is a line number in the code to add a break. If you do so, there is a breakpoint placed at the line specified.
 
 When you want to run your code in gdb, you can use the run command while gdb is active. If you do so, your code will pause at whatever place you put your breakpoints. Once at a breakpoint, we can either step into a function call using ‘step’ or ‘next’, with the latter stepping over functions. Additionally, in gdb you can print out the stack trace of the program (such as which methods have been run) by using the ‘bt’ command. When you are finished running gdb, use the ‘q’ command to exit the gdb interface. An example of gdb will be shown in the live lab session.
+
+We recommend you read the [GDB Documentation](https://ftp.gnu.org/old-gnu/Manuals/gdb/html_node/gdb_1.html) to gain a deeper understanding of GDB and its capabilities. 
 
 ## Part 4: Code Review (8 Points)
 
