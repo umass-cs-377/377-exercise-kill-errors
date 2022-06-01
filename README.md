@@ -9,7 +9,7 @@ This exercise is designed to cover the [`kill`](https://man7.org/linux/man-pages
 Once you have logged in to Edlab, you can clone this repo using
 
 ```bash
-git clone https://github.com/umass-cs-377/377-lab-kill-errors.git
+git clone https://github.com/umass-cs-377/377-exercise-kill-errors.git
 ```
 
 Then you can use `cd` to open the directory you just cloned:
