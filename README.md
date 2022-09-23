@@ -38,31 +38,32 @@ Last week, we learned about various commands to create and wait for new processe
 #include <chrono>
 
 int main() {
-  int pid = fork();
-  if (pid == 0){
-	  int runs = 0;
-		while (true){
+	int pid = fork();
+	if (pid == 0){
+		int runs = 0;
+		while (runs < 10000){
 			runs += 1;
 			std::cout << "Run #" << runs << "\n";
-			std::this_thread::sleep_for (std::chrono::milliseconds(1));
+                        std::this_thread::sleep_for (std::chrono::milliseconds(1));
 		}
 	} else {
 		char test[3];
 		sprintf(test, "%d", pid);
-
-		char *arguments[3];
+	
+		char *arguments[4];
 		arguments[0] = (char*)"./kill";
 		arguments[1] = strdup(test);
 		arguments[2] = NULL;
+                arguments[3] = NULL;
 
-		//
-		// Exercise questions in Gradescope will have you insert code here
-		//
-
+		//Question code goes here
+	
 		std::cout << "finish them?\n";
 		execvp(arguments[0], arguments);
 	}
-}
+}	
+
+```
 ```
 
 **`kill.cpp`**
