@@ -22,7 +22,7 @@ This repo includes a `Makefile` that allows you to locally compile and run all t
 
 ## Part 1: Kill Command
 
-Last week, we learned about various commands to create and wait for new processes. Many of these tasks are accomplished through the user of a process ID (typically referred to as a "pid"). Another use of a process ID is for the invoking the `kill` system call. As the name implies, this function _kills_ a process, terminating it immediately in the operating system[^1]. As an example, please look at the following code:
+Last week, we learned about various commands to create and wait for new processes. Many of these tasks are accomplished through the user of a process ID (typically referred to as a "pid"). Another use of a process ID is for the invoking the `kill` system call. As the name implies, this function _sends a signal_ to a process, some signals like `SIGQUIT1 will terminate the process immediately in the operating system[^1]. As an example, please look at the following code:
 
 [^1]: More specifically, it removes it from the process list and deallocates all resources associated with it.
 
