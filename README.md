@@ -1,4 +1,4 @@
-# Exercise #6: Kill and Errors
+# Exercise Kill and Errors
 
 ## Overview
 
